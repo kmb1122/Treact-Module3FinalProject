@@ -8,8 +8,39 @@
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+p {
+    line-height:  1.5;
+    color: #7C8BA1;
+    margin-top: 16px;
+}
+
+.section__description {
+    max-width: 576px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 48px;
+    color: #1A202C;
+}
+
+.section__title {
+    font-weight: 900;
+    padding: 16px 0;
+}
+
+h4 {
+    color: #6415FF;
+    letter-spacing: 1px;
 }
 
 a {
@@ -27,18 +58,40 @@ button {
     cursor: pointer;
 }
 
+.section__btn {
+    border-radius: 32px;
+    border: none;
+    background-color: #6415FF;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+
+.section__btn:hover {
+    background-color: #4004b7;
+}
+
 ul {
     display: flex;
 }
 
 li {
     list-style-type: none;
+    padding: 12px 0px;
+}
+
+.purple {
+    color: #6415FF;
 }
 
 /* Landing */
 
 #landing {
-    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
 .nav__container {
@@ -48,6 +101,7 @@ li {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding-top: 32px;
 }
 
 .nav__logo {
@@ -145,15 +199,10 @@ li {
   align-items: center;
 }
 
-.menu__list {
-  padding: 24px 12px;
-}
-
 .menu__link, .menu__link--primary {
   color: #243E63;
   font-size: 18px;
   font-weight: 600;
-  padding: 12px 0;
 }
 
 .menu__link--primary {
@@ -173,6 +222,164 @@ li {
   right: 20px;
   padding: 8px;
   color: #243E63;
+}
+
+.header {
+    display: flex;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: left;;
+    width: 40%;
+}
+
+#header__description {
+    font-size: 18px;
+    color:#243E63;
+    margin: 32px 0; 
+}
+
+.header__wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    border: lightgrey solid 2px;
+    border-radius: 32px;
+    padding: 20px 192px 20px 32px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 300ms ease;
+}
+
+input::placeholder {
+    color: #A0AEC0;
+}
+
+input:hover {
+    border: grey solid 2px;
+}
+
+.header__btn {
+    height: calc(100% - 16px); 
+    padding: 0 32px;
+    margin: 8px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.header__customers {
+    font-size: 14px;
+    color: #A0AEC0;
+    margin: 64px 0 20px 0;
+}
+
+.header__img--1 {
+    width: 88%;
+    opacity: .5;
+}
+
+.header__img--2 {
+    width: 60%;
+}
+
+/* Features */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.feature__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+
+.feature {
+    display: flex;
+    width: calc(100%/3);
+    padding: 32px 24px;
+}
+
+.feature__img {
+    border: lightgrey solid 2px;
+    color:#6415FF;
+    font-size: 18px;
+    padding: 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+   
+}
+
+.feature__title {
+    font-size: 18px;
+    color:#243E63;
+}
+
+.feature__description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 8px 0 0 16px;
+    
+}
+
+.feature__para {
+    line-height: 2;
+}
+
+/* Quality Work */
+
+.quality {
+    display: flex;
+}
+
+.quality__description {
+    width: 50%;
+}
+
+.quality__btn {
+    padding: 12px 24px;
+    margin: 24px 0;
+}
+
+.quality__img--wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.quality__img {
+    border: lightgrey solid 1px;
+    border-radius: 2px;
+    width: 100%;
+    position: relative;
+}
+
+.quality__grid {
+    fill:#6415FF;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    --tw-text--opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
 }
 
 /* Small Phones, Large Smartphones */
