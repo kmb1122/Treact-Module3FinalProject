@@ -348,6 +348,7 @@ input:hover {
 
 .quality__description {
     width: 50%;
+    margin-right: 64px;
 }
 
 .quality__btn {
@@ -359,6 +360,8 @@ input:hover {
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-right: 40px;
+    position: relative;
     width: 50%;
 }
 
@@ -366,12 +369,13 @@ input:hover {
     border: lightgrey solid 1px;
     border-radius: 2px;
     width: 100%;
-    position: relative;
+    z-index: 1;
 }
 
 .quality__grid {
     fill:#6415FF;
-    width: 20%;
+    width: 80px;
+    height: 80px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -380,6 +384,66 @@ input:hover {
     color: rgba(100, 21, 255, var(--tw-text-opacity));
     z-index: 0;
     display: block;
+}
+
+/* Steps */
+
+.steps {
+    display: flex;
+}
+
+.steps__img--wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+.steps__img {
+    width: 100%;
+    z-index: 1;
+}
+
+.steps__grid {
+    fill: rgb(230, 198, 254);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -72px;
+    z-index: 0;
+}
+
+.steps__description {
+    margin: 32px 0 32px 64px;
+}
+
+.step {
+    display: flex;
+    margin-top: 32px;
+}
+
+.step__num {
+    font-size: 36px;
+    color: #CBD5E0;
+    font-weight: 600; 
+}
+
+.step__description {
+    margin-left: 24px;
+}
+
+.step__title {
+    font-size: 20px;
+    color: #243E63;
+    font-weight: bold;
+}
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    max-width: 320px;
+    line-height: 2;
 }
 
 /* Small Phones, Large Smartphones */
