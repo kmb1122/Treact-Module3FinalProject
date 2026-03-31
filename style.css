@@ -926,8 +926,8 @@ input:hover {
 
 .footer__para {
     color: #c2cbda;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .footer__icons {
@@ -938,7 +938,7 @@ input:hover {
 .footer__icon {
     width: 32px;
     height: 32px;
-    margin-right: 8px;
+    margin-right: 12px;
     font-size: 14px;
     color:#243E63;
     border: none;
