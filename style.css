@@ -550,7 +550,7 @@ input:hover {
     margin: 64px 32px 0 0;
     width: 33.33%;
     border-radius: 8px;
-    box-shadow: 0 0 15px -5px #7C8BA1;
+    box-shadow: 0 0 40px -5px #7C8BA1;
 }
 
 .plan__strip {
